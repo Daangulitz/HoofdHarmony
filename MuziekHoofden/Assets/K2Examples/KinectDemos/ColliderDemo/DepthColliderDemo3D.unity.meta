@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 7beca991f7fa1914985be46ab65a5479
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/DepthColliderDemo3D.unity
+  uploadId: 844872

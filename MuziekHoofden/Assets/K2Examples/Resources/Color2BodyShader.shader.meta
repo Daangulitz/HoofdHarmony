@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8485281ea3384cd48a7d533c8f365373
+timeCreated: 1454259092
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/Color2BodyShader.shader
+  uploadId: 844872

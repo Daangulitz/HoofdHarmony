@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 54094bb1ab636734ca01cfc4fc1cc7bd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BlobDetectionDemo/Prefabs/BlobAsCube.prefab
+  uploadId: 844872

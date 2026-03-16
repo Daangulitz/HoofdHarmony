@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49a7b28d78d602d41a0991dea3232acc
+timeCreated: 1457299038
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Plugins/Android/Assets/OSIG_Readme.txt
+  uploadId: 844872

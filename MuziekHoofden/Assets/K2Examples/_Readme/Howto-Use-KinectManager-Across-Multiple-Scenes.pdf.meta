@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d388cc3c662addd47b216dd8a20f1898
+timeCreated: 1433016241
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/_Readme/Howto-Use-KinectManager-Across-Multiple-Scenes.pdf
+  uploadId: 844872

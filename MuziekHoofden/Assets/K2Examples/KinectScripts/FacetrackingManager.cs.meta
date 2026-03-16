@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1eedf84d761a4dc4ba2ed284ddf51aa1
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/FacetrackingManager.cs
+  uploadId: 844872

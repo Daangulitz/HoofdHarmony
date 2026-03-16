@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 24a68b3ab03e9e24d8fb673f4f8d107a
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/Filters/BoneOrientationsConstraint.cs
+  uploadId: 844872

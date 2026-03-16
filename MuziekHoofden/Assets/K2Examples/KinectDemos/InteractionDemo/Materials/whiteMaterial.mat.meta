@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: d850922f4d1cd964986d47855d9f7189
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/Materials/whiteMaterial.mat
+  uploadId: 844872

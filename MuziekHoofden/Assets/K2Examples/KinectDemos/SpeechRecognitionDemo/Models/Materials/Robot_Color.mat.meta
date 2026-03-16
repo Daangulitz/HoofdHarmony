@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 3dab33a82fcf6d345bc40d40d92edd0c
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Models/Materials/Robot_Color.mat
+  uploadId: 844872

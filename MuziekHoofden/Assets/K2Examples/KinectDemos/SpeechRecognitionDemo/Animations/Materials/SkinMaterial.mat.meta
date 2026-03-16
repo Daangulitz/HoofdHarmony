@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b245f976b24d448efaadadd146c9fa7e
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Animations/Materials/SkinMaterial.mat
+  uploadId: 844872

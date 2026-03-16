@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a9625ba6015282449cb8d2a9f59b945
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/Scripts/CubePresentationScript.cs
+  uploadId: 844872

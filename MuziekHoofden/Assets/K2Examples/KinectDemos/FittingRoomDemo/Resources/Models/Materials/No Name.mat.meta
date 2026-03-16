@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2d9f611dffe7f8a41a36b817b03d5449
+timeCreated: 1434988858
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FittingRoomDemo/Resources/Models/Materials/No
+    Name.mat
+  uploadId: 844872

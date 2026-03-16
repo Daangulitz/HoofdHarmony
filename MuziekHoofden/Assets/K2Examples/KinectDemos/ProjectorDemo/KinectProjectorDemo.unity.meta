@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6424bd683fe957541b7a86f8b26fdeb7
+timeCreated: 1491899495
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ProjectorDemo/KinectProjectorDemo.unity
+  uploadId: 844872

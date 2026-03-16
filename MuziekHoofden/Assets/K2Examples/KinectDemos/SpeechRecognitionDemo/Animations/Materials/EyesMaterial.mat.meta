@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 61d85804681a74bfbb3d5bd34f9d520e
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Animations/Materials/EyesMaterial.mat
+  uploadId: 844872

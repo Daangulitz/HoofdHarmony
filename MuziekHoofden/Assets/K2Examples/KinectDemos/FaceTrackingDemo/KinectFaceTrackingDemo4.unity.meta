@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6227e7a8b5c8ffa4483e7461cb0a2029
+timeCreated: 1443783703
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FaceTrackingDemo/KinectFaceTrackingDemo4.unity
+  uploadId: 844872

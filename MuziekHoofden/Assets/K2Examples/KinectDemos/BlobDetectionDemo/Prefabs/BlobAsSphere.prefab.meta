@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 23115ab517e41ed4fb9223899f008f8f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BlobDetectionDemo/Prefabs/BlobAsSphere.prefab
+  uploadId: 844872

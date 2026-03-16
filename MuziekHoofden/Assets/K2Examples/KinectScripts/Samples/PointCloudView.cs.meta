@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a01bfa7e53b62a42a1888a6b3637e33
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/Samples/PointCloudView.cs
+  uploadId: 844872

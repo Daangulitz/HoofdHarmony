@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 29735fcf935e5f94a9473917f381f6b2
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/Scripts/GrabDropScript.cs
+  uploadId: 844872

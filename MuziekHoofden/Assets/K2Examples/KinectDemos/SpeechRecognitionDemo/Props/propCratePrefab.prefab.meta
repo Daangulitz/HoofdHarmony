@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 578a898e1b62d684b87ed6538a33fcb0
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Props/propCratePrefab.prefab
+  uploadId: 844872

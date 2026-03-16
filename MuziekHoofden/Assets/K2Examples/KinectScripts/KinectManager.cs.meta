@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6b531f336dfee5f438f94ed501caefc7
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/KinectManager.cs
+  uploadId: 844872

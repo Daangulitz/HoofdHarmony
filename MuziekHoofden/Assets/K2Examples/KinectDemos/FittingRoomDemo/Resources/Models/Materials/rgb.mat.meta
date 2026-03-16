@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: acfbf865bb41ea74cb3275ba8d83275d
+timeCreated: 1437061326
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FittingRoomDemo/Resources/Models/Materials/rgb.mat
+  uploadId: 844872

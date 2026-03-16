@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 28179444c3c7af744954d04207020229
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/Materials/FloorMaterial.mat
+  uploadId: 844872

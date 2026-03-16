@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 0b3e4f6fde8abb14b9f084a4830a910c
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/Materials/blueMaterial.mat
+  uploadId: 844872

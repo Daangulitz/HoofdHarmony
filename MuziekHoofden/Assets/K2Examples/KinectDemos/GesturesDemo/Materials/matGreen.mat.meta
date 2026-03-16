@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cd08ba65505755445b15ad8ead3df8cb
+timeCreated: 1441645387
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/Materials/matGreen.mat
+  uploadId: 844872

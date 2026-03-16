@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: baa201e5065987143a9f7b76c02e6304
+timeCreated: 1436543734
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/KinectInteractionDemo1.unity
+  uploadId: 844872

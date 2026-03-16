@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f5af8b1f9590dd04b9a8c548c3c1653d
+timeCreated: 1463350187
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VariousDemos/KinectHeightEstimator.unity
+  uploadId: 844872

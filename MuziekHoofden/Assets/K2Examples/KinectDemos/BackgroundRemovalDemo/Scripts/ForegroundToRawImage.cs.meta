@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0ca948b232bd1ce48b254bb84048cbab
+timeCreated: 1505645515
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BackgroundRemovalDemo/Scripts/ForegroundToRawImage.cs
+  uploadId: 844872

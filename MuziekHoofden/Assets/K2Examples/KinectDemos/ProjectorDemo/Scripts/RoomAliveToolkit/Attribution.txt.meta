@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bbf128722b2ef244ebc07db1fcc3c73b
+timeCreated: 1493824099
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ProjectorDemo/Scripts/RoomAliveToolkit/Attribution.txt
+  uploadId: 844872

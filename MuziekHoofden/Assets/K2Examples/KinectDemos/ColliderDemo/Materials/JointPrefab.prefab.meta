@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 037f26cc9d0926549a1d82e820c9e350
+timeCreated: 1457363299
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/Materials/JointPrefab.prefab
+  uploadId: 844872

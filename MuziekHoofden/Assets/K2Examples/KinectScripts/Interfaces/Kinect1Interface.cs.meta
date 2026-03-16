@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4e73c691701077f4d8b0dc4cd6e7526e
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/Interfaces/Kinect1Interface.cs
+  uploadId: 844872

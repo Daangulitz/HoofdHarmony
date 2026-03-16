@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 5c6a1347f8706d9428cd9c4b8d29f4b5
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/Materials/Side1.mat
+  uploadId: 844872

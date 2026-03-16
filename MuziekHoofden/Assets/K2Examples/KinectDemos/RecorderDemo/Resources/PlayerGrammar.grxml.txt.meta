@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5abcb617fc329174598d1c5b84051959
+timeCreated: 1439018410
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/RecorderDemo/Resources/PlayerGrammar.grxml.txt
+  uploadId: 844872

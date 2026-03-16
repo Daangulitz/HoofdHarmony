@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 05142010d3adb1044971f4b42f76ba72
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/MocapAnimatorDemo/Scripts/MocapPlayer.cs
+  uploadId: 844872

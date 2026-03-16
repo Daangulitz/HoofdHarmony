@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 68f8e12456390df468695134bc1dcf3b
+timeCreated: 1439041420
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/RecorderDemo/Materials/CubemanCube.prefab
+  uploadId: 844872

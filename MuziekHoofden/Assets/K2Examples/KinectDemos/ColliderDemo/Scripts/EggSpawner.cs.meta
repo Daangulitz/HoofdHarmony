@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ca3a15c4ea4180f4a8550bb68c1489fd
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/Scripts/EggSpawner.cs
+  uploadId: 844872

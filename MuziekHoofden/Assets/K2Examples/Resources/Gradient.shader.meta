@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bf10c391a662b0547932914f6fff494f
+timeCreated: 1498321181
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/Gradient.shader
+  uploadId: 844872

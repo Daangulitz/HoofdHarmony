@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: affe8c6f197647e48bf54c400d1d37ef
+timeCreated: 1463344601
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VariousDemos/Scripts/SimpleHolographicCamera.cs
+  uploadId: 844872

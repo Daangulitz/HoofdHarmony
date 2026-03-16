@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bbe10687bfacf62428c50bcea567764a
+timeCreated: 1480449584
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/MovieSequenceDemo/KinectMovieDemo.unity
+  uploadId: 844872

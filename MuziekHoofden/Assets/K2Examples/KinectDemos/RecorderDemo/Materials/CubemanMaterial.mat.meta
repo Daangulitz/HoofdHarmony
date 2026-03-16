@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6b684e75b53722c49988eeca9040edba
+timeCreated: 1438962991
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/RecorderDemo/Materials/CubemanMaterial.mat
+  uploadId: 844872

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 16e88840f904a844f86ac66e52685adf
+timeCreated: 1483560520
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/Materials/BallPrefab2D.prefab
+  uploadId: 844872

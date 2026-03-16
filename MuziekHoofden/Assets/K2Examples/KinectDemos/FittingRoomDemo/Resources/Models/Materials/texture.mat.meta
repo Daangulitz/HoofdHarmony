@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 33d86ac21b87aa04bb3a2a1b908282f3
+timeCreated: 1434988858
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FittingRoomDemo/Resources/Models/Materials/texture.mat
+  uploadId: 844872

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: e6603b38a4cd7b9478365939d6797939
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/KinectAvatarsDemo4.unity
+  uploadId: 844872

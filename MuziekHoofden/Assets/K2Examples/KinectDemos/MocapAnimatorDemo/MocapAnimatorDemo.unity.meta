@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: cb6e7806bdb5db24ebf8a2ffe5750e0a
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/MocapAnimatorDemo/MocapAnimatorDemo.unity
+  uploadId: 844872

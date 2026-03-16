@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 3e2615421ff704d489cfebe9ca7c0763
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/OverlayDemo/Materials/GreenStick.prefab
+  uploadId: 844872

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b01c6442ce328204683d61eff6090116
+timeCreated: 1431196613
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/seated.gbd.bytes
+  uploadId: 844872

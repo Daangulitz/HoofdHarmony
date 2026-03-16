@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 3b95f22ad18bc804db5ceecb8a813dde
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/OverlayDemo/KinectOverlayDemo1.unity
+  uploadId: 844872

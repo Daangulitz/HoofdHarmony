@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bff2620c05d815f46bdeac359a28346a
+timeCreated: 1441645387
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/Materials/matRed.mat
+  uploadId: 844872

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f9ccf606d9330f49a5a37b2a2825297
+timeCreated: 1489172258
+licenseType: Store
+ComputeShaderImporter:
+  currentBuildTarget: 21
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/AstraCoordMapper.compute
+  uploadId: 844872

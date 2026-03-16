@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ffb111704c8d0ae49b97d60e5419fe35
+timeCreated: 1495833444
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/MedianShader.shader
+  uploadId: 844872

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 821d419fc34a3734d9e4d6602216f158
+timeCreated: 1438962640
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/RecorderDemo/KinectRecorderDemo.unity
+  uploadId: 844872

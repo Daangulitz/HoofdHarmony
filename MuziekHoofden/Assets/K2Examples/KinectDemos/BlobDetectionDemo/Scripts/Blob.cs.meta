@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 643d6bd5ba0212c44b0aacd7137030c0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BlobDetectionDemo/Scripts/Blob.cs
+  uploadId: 844872

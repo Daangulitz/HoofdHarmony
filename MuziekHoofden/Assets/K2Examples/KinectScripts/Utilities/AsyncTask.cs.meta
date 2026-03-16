@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 876648bb9f4d6de4487bf1198047df01
+timeCreated: 1492235134
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/Utilities/AsyncTask.cs
+  uploadId: 844872

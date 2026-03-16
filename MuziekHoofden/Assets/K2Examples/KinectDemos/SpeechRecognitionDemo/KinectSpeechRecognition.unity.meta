@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 697a42468d0d7e64aacb18fb031102fd
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/KinectSpeechRecognition.unity
+  uploadId: 844872

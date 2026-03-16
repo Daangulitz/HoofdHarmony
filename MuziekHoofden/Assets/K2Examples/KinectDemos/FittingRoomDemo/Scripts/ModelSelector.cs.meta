@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0d2a9658f122d0a4a9bb2b19c08e47c5
+timeCreated: 1427043108
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FittingRoomDemo/Scripts/ModelSelector.cs
+  uploadId: 844872

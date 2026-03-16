@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 8b1a0fd869e92754583cfaf1292ae933
+TextScriptImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/KinectV1FaceData.zip.bytes
+  uploadId: 844872

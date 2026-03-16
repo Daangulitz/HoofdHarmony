@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 87ae67f728dce4fb08385f4fe3aec5ef
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Models/BotController.controller
+  uploadId: 844872

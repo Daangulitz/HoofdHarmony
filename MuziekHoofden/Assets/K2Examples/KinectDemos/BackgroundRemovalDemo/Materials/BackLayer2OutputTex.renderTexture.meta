@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3569d1c3a86e3b749a73e938b3d13c01
+timeCreated: 1456524043
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BackgroundRemovalDemo/Materials/BackLayer2OutputTex.renderTexture
+  uploadId: 844872

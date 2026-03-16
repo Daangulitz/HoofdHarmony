@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: db0437ba8ecaf7a44833b56ad5858ecd
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/Cubeman/DebugLine.prefab
+  uploadId: 844872

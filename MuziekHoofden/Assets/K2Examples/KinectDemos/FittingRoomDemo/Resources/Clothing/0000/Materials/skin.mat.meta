@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: da367a0f43e141749968e4b22b23d5f9
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FittingRoomDemo/Resources/Clothing/0000/Materials/skin.mat
+  uploadId: 844872

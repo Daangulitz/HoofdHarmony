@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 75a8ed001948d314e865d570bf611958
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/Materials/yellowMaterial.mat
+  uploadId: 844872

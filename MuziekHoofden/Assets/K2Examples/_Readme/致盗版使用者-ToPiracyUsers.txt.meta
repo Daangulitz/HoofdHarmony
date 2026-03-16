@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4321174f6d35c374e8347dd385299c24
+timeCreated: 1506887918
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: "Assets/K2Examples/_Readme/\u81F4\u76D7\u7248\u4F7F\u7528\u8005-ToPiracyUsers.txt"
+  uploadId: 844872

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0afe6f4b5ffe46044818729cfc3f6d98
+timeCreated: 1441645387
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/Materials/matOrange.mat
+  uploadId: 844872

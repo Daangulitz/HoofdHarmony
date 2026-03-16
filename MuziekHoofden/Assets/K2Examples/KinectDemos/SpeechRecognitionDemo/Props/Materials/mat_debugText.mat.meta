@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b2dae50535458ac4983d24904d1e90fc
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Props/Materials/mat_debugText.mat
+  uploadId: 844872

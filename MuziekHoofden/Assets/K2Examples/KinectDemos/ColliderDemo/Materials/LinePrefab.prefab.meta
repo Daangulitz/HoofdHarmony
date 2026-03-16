@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 43684b8a74f98b64c8ceb58b7239f24a
+timeCreated: 1457363299
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/Materials/LinePrefab.prefab
+  uploadId: 844872

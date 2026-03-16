@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e026c9877ffad5541a87d0a74be9e280
+timeCreated: 1438195791
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/KinectV1UnityWrapper.x64.zip.bytes
+  uploadId: 844872

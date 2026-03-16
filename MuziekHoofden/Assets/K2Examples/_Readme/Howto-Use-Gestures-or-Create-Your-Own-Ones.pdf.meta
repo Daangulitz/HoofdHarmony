@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ebba33c62cacfe449e1134c02a369b1
+timeCreated: 1433016241
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/_Readme/Howto-Use-Gestures-or-Create-Your-Own-Ones.pdf
+  uploadId: 844872

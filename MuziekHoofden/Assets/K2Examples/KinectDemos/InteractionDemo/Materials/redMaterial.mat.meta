@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 1870c9863d6ae8e4bb2ab84bb5e2e110
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/Materials/redMaterial.mat
+  uploadId: 844872

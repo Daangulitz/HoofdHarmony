@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3567bb46a7c5f8b4e986e59b0a9f0a46
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BackgroundRemovalDemo/Scripts/UserSilhouetteRenderer.cs
+  uploadId: 844872

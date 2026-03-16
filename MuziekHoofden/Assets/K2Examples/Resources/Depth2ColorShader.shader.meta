@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fc069ac80103e584588438129bbcf54a
+timeCreated: 1429710051
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/Depth2ColorShader.shader
+  uploadId: 844872

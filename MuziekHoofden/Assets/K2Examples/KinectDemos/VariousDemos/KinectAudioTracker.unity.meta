@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ae4a223ca19c1e4d9b3585a3730cfa9
+timeCreated: 1487662908
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VariousDemos/KinectAudioTracker.unity
+  uploadId: 844872

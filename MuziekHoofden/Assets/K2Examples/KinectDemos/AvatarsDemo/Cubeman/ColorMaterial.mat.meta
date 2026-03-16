@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: fe88cedb1a2428d44afa801a6b6b3d98
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/Cubeman/ColorMaterial.mat
+  uploadId: 844872

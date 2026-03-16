@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 46b6058ae318248a1898e02eeac48c2e
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Models/Arms Only.mask
+  uploadId: 844872

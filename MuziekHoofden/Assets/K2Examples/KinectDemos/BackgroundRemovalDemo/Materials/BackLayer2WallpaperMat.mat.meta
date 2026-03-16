@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 69b756bb25224a94896ce7259c046480
+timeCreated: 1456526320
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BackgroundRemovalDemo/Materials/BackLayer2WallpaperMat.mat
+  uploadId: 844872

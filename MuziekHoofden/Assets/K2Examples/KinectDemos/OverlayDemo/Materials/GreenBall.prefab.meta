@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: c17b901a469cc934f88f499251bed1bc
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/OverlayDemo/Materials/GreenBall.prefab
+  uploadId: 844872

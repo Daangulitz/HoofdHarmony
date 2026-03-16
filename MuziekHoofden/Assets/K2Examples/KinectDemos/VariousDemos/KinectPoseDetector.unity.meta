@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ab1548f4562a634ca0fb553f7931360
+timeCreated: 1455285758
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VariousDemos/KinectPoseDetector.unity
+  uploadId: 844872

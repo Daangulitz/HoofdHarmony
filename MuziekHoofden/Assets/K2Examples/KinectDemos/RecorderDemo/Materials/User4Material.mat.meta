@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7d500a349e386494c8adc82d6e8c70f3
+timeCreated: 1472918633
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/RecorderDemo/Materials/User4Material.mat
+  uploadId: 844872

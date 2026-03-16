@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: c19ffeb0f090eac4bbcdf1ab23a9ff66
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/Cubeman/Materials/SkeletonLine.mat
+  uploadId: 844872

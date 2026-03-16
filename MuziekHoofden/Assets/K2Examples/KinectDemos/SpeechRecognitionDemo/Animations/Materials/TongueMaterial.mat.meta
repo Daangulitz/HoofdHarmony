@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 26f8140631a114959978c0d3342f8cf5
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Animations/Materials/TongueMaterial.mat
+  uploadId: 844872

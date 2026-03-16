@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 66634af4fccab436f9c416e49a8056bd
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Animations/Materials/SuitMaterial.mat
+  uploadId: 844872

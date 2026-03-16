@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 261bc0562f207234799d0868d11ef559
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectScripts/Playmaker/PlaymakerKinectActions.zip
+  uploadId: 844872

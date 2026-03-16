@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: ec17cf42f9cca574487f91b4d551b832
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/InteractionDemo/Materials/greenMaterial.mat
+  uploadId: 844872

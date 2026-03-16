@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bd88c9758503bc943992abb8612a99cc
+timeCreated: 1448124918
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/BlurShader2.shader
+  uploadId: 844872

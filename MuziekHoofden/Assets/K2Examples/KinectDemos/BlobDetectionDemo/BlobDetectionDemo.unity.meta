@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b62f96023829fc44baf4c9383fd70972
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BlobDetectionDemo/BlobDetectionDemo.unity
+  uploadId: 844872

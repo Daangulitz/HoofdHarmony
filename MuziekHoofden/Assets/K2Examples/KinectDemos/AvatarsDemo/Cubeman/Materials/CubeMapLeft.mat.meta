@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: bc548844136821b42874fc39b2d7655b
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/Cubeman/Materials/CubeMapLeft.mat
+  uploadId: 844872

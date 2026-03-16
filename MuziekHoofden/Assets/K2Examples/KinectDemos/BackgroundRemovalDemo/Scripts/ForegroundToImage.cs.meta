@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 45387eba38b23924686a5af73d3a0154
+timeCreated: 1444459851
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BackgroundRemovalDemo/Scripts/ForegroundToImage.cs
+  uploadId: 844872

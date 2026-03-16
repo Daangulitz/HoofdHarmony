@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 84ebae97ee16207448d3731485bfeff6
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/BackgroundRemovalDemo/KinectBackgroundRemoval1.unity
+  uploadId: 844872

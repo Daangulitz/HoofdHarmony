@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5c383777eaae1684fb2fd2b9ff58e52d
+timeCreated: 1481796112
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VisualizerDemo/Scripts/MousePointOverlayer.cs
+  uploadId: 844872

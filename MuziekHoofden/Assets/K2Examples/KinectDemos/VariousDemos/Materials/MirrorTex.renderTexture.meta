@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b811d8d3c19ece946a402f59359581a2
+timeCreated: 1456560432
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VariousDemos/Materials/MirrorTex.renderTexture
+  uploadId: 844872

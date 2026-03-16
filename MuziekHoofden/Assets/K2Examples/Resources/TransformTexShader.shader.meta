@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9881d895df85b6544847eb173355d48d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/TransformTexShader.shader
+  uploadId: 844872

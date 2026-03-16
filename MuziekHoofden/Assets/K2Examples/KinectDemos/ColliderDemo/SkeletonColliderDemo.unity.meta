@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1a106997e1090394f96f65e440b5232c
+timeCreated: 1455813543
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/SkeletonColliderDemo.unity
+  uploadId: 844872

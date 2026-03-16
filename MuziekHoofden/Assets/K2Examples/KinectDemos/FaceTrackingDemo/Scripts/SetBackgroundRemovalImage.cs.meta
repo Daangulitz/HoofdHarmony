@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f15ad55d1da4cf14b9979a5638513ae6
+timeCreated: 1439203581
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FaceTrackingDemo/Scripts/SetBackgroundRemovalImage.cs
+  uploadId: 844872

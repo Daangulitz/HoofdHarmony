@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8993e6b43eb7f9f4b86757544fc33173
+timeCreated: 1457268198
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/Prefabs/JointPrefab.prefab
+  uploadId: 844872

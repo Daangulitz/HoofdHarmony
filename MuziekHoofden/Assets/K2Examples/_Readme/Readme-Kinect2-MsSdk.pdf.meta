@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fd0585bd38b5fbb4fb8c822619af49a1
+timeCreated: 1433016241
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/_Readme/Readme-Kinect2-MsSdk.pdf
+  uploadId: 844872

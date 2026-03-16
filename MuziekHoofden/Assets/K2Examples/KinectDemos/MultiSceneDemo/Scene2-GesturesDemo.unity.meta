@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9070f8ae67139a94fb288cc38da290be
+timeCreated: 1425905332
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/MultiSceneDemo/Scene2-GesturesDemo.unity
+  uploadId: 844872

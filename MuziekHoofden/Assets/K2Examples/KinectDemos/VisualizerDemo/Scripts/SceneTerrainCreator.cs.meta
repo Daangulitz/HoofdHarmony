@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 80bc6c92793cd924cb2d3455b16c87d2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VisualizerDemo/Scripts/SceneTerrainCreator.cs
+  uploadId: 844872

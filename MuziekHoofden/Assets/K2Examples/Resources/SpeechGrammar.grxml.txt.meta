@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: bc059d1286372af419093f7b29a2b7d8
+TextScriptImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/SpeechGrammar.grxml.txt
+  uploadId: 844872

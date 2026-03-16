@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 523b4192f5644f84b8164e19e8be58e1
+timeCreated: 1457126252
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/VisualizerDemo/KinectSceneVisualizer.unity
+  uploadId: 844872

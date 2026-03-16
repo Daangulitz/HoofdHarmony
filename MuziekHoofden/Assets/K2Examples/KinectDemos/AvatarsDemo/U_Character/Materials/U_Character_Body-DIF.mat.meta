@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 805c4d7a00aefd043bd7c9990c564787
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/AvatarsDemo/U_Character/Materials/U_Character_Body-DIF.mat
+  uploadId: 844872

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 09becf79943a85144901db4752396f68
+timeCreated: 1483536399
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/ColliderDemo/DepthColliderDemo2D.unity
+  uploadId: 844872

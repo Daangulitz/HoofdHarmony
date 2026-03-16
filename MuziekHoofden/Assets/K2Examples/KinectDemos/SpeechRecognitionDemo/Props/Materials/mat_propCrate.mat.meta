@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b42ce3ac894cea3408dd18579ee8ccdc
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/SpeechRecognitionDemo/Props/Materials/mat_propCrate.mat
+  uploadId: 844872

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 58c3ed8bdbb900d40a8a739b988978ae
+timeCreated: 1453054797
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/KinectDemos/FittingRoomDemo/Scripts/CloudFaceScripts/FaceObjs/Face.cs
+  uploadId: 844872

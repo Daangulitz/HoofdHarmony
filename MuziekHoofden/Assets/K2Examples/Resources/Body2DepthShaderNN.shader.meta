@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 531818eb2ac17f747abb939075c78742
+timeCreated: 1429710051
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.24
+  assetPath: Assets/K2Examples/Resources/Body2DepthShaderNN.shader
+  uploadId: 844872
