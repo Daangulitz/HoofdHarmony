@@ -1,60 +1,42 @@
-import './style.css'
-import typescriptLogo from './assets/typescript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { setupCounter } from './counter.ts'
+import "./style.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${typescriptLogo}" class="framework" alt="TypeScript logo"/>
-    <img src=${viteLogo} class="vite" alt="Vite logo" />
+const app = document.querySelector<HTMLDivElement>("#app")!;
+
+// 1. Create a Start Overlay (Required for Audio/Video autoplay policy)
+app.innerHTML = `
+  <div id="overlay">
+    <button id="start-btn">START SPOOKY CHOIR</button>
   </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.ts</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+  <canvas id="scene"></canvas>
+`;
 
-<div class="ticks"></div>
+const startBtn = document.querySelector<HTMLButtonElement>("#start-btn")!;
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src=${viteLogo} alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://www.typescriptlang.org" target="_blank">
-          <img class="button-icon" src="${typescriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+startBtn.addEventListener("click", () => {
+  initExperience();
+  // Remove the overlay once clicked
+  document.querySelector("#overlay")?.remove();
+});
 
-<div class="ticks"></div>
-<section id="spacer"></section>
-`
+function initExperience() {
+  console.log("Initializing Systems...");
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+  const videoUrl = "http://localhost:3000/media/heads/test.mp4";
+
+  const video = document.createElement("video");
+  video.src = videoUrl;
+  video.loop = true;
+  video.muted = false; // Now we can unmute because the user clicked!
+
+  // Add to body hidden, or just keep it in memory for Three.js
+  //video.style.display = "none";
+  video.style.display = "block";
+  video.style.position = "absolute";
+  video.style.top = "0";
+  video.style.zIndex = "10";
+  document.body.appendChild(video);
+
+  video.play().catch((e) => console.error("Video failed:", e));
+
+  // TODO: Initialize your SceneManager and AudioManager here
+}
