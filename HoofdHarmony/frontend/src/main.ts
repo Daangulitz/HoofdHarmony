@@ -1,8 +1,10 @@
 import "./style.css";
+import { SceneManager } from "./modules/SceneManager";
+import { VideoManager } from "./modules/VideoManager";
+import * as THREE from "three";
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
-// 1. Create a Start Overlay (Required for Audio/Video autoplay policy)
 app.innerHTML = `
   <div id="overlay">
     <button id="start-btn">START SPOOKY CHOIR</button>
@@ -14,29 +16,33 @@ const startBtn = document.querySelector<HTMLButtonElement>("#start-btn")!;
 
 startBtn.addEventListener("click", () => {
   initExperience();
-  // Remove the overlay once clicked
   document.querySelector("#overlay")?.remove();
 });
 
 function initExperience() {
-  console.log("Initializing Systems...");
+  // 1. Initialize the 3D Stage
+  const canvas = document.querySelector("#scene") as HTMLCanvasElement;
+  const sceneManager = new SceneManager(canvas);
 
+  // 2. Initialize the Video Logic
+  const videoManager = new VideoManager();
   const videoUrl = "http://localhost:3000/media/heads/test.mp4";
 
-  const video = document.createElement("video");
-  video.src = videoUrl;
-  video.loop = true;
-  video.muted = false; // Now we can unmute because the user clicked!
+  const { texture } = videoManager.createVideoTexture(videoUrl);
 
-  // Add to body hidden, or just keep it in memory for Three.js
-  //video.style.display = "none";
-  video.style.display = "block";
-  video.style.position = "absolute";
-  video.style.top = "0";
-  video.style.zIndex = "10";
-  document.body.appendChild(video);
+  // 3. Create a "Ghost Plane" in the 3D world
+  // 16:9 aspect ratio (Width 4, Height 2.25)
+  const geometry = new THREE.PlaneGeometry(4, 2.25);
+  const material = new THREE.MeshBasicMaterial({
+    map: texture,
+    transparent: true,
+    side: THREE.DoubleSide,
+  });
 
-  video.play().catch((e) => console.error("Video failed:", e));
+  const ghostMesh = new THREE.Mesh(geometry, material);
 
-  // TODO: Initialize your SceneManager and AudioManager here
+  // Add the ghost to our 3D scene
+  sceneManager.addMesh(ghostMesh);
+
+  console.log("Ghost added to 3D Scene.");
 }
