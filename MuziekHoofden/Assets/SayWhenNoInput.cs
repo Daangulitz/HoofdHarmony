@@ -7,33 +7,41 @@ public class SayWhenNoInput : MonoBehaviour
     [Header("Head 1 (Jens)")]
     public Image head1Display;
     public Sprite head1Normal, head1Talking;
-    public int bruceChannel = 0; // Use 0 for 3-track file, or 2 for 5-track file
+    public int bruceChannel = 0;
 
     [Header("Head 2 (Marijn)")]
     public Image head2Display;
     public Sprite head2Normal, head2Talking;
-    public int doryChannel = 1; // Use 1 for 3-track file, or 3 for 5-track file
+    public int doryChannel = 1;
 
     [Header("Head 3 (Daan)")]
     public Image head3Display;
     public Sprite head3Normal, head3Talking;
-    public int marlinChannel = 2; // Use 2 for 3-track file, or 4 for 5-track file
+    public int marlinChannel = 2;
 
     [Header("Audio Sources")]
-    public AudioSource performanceSource; 
+    public AudioSource performanceSource;
     public AudioSource idleSource;
     public AudioClip itsAWitch;
     public AudioClip[] idleClips;
 
     [Header("Settings")]
-    public bool debugMode = true; 
+    public bool debugMode = true;
     [Range(0.001f, 0.2f)] public float sensitivity = 0.01f;
     [Range(0.01f, 0.5f)] public float mouthSmoothTime = 0.12f;
+
+    [Header("Kinect Beam (Infrared Sensor Logic)")]
+    [Tooltip("Horizontal pixel (0-511 for Kinect v2)")]
+    public int depthX = 256;
+    [Tooltip("Vertical pixel (0-423 for Kinect v2)")]
+    public int depthY = 212;
+    [Tooltip("Distance in millimeters (2000 = 2 meters)")]
+    public float triggerDistance = 2000f;
+    private bool isBlocked = false;
 
     private float h1Timer, h2Timer, h3Timer;
     private KinectZoneSoundManager KZSManager;
     private KinectManager kinect;
-    private bool userDetected = false;
     private float[] audioDataBuffer = new float[1024];
 
     void Start()
@@ -50,34 +58,49 @@ public class SayWhenNoInput : MonoBehaviour
 
     void Update()
     {
-        // 1. INPUT: Spacebar to trigger performance manually
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            PlayIdle();
-        }
+        // 1. MANUAL INPUT
+        if (Keyboard.current.spaceKey.wasPressedThisFrame) PlayPerformance();
 
-        // 2. KINECT: Trigger performance if person enters
-        if (kinect != null)
+        // 2. KINECT: "Infrared Beam" Logic
+        if (kinect != null && kinect.IsInitialized())
         {
-            bool detected = kinect.IsUserDetected();
-            if (detected && !userDetected)
+            // Get the full depth map from the Kinect
+            ushort[] depthMap = kinect.GetRawDepthMap();
+
+            if (depthMap != null)
             {
-                userDetected = true;
-                PlayPerformance();
-            }
-            else if (!detected)
-            {
-                userDetected = false;
+                // Kinect v2 depth resolution is 512 x 424
+                int width = 512;
+
+                // Calculate the array index: (Y * Width) + X
+                int index = (depthY * width) + depthX;
+
+                // Ensure the index is within the array bounds
+                if (index >= 0 && index < depthMap.Length)
+                {
+                    int currentDepth = depthMap[index];
+
+                    // Check if something "distorts" the beam (closer than triggerDistance)
+                    // Note: 0 usually means "too close to see" or "out of range"
+                    if (currentDepth > 100 && currentDepth < triggerDistance)
+                    {
+                        if (!isBlocked)
+                        {
+                            isBlocked = true;
+                            if (debugMode) Debug.Log($"Beam Tripped! Depth at [{depthX},{depthY}]: {currentDepth}mm");
+                            PlayPerformance();
+                        }
+                    }
+                    else
+                    {
+                        isBlocked = false;
+                    }
+                }
             }
         }
 
-        // 3. IDLE: Auto-trigger idle sounds
-        if (KZSManager != null && KZSManager.TimeNoInput > 60f)
-        {
-            PlayIdle();
-        }
-
-        // 4. LIP SYNC: Run every frame while audio is playing
+        // 3. IDLE / 4. LIP SYNC (Rest of your code remains the same)
+        if (KZSManager != null && KZSManager.TimeNoInput > 60f) PlayIdle();
         HandleLipSync();
     }
 
@@ -91,7 +114,6 @@ public class SayWhenNoInput : MonoBehaviour
         }
         else if (idleSource != null && idleSource.isPlaying)
         {
-            // Idle usually only moves Bruce
             UpdateHead(head1Display, head1Normal, head1Talking, 0, idleSource, ref h1Timer, "Idle Bruce");
             UpdateHead(head2Display, head2Normal, head2Talking, -1, null, ref h2Timer, "");
             UpdateHead(head3Display, head3Normal, head3Talking, -1, null, ref h3Timer, "");
@@ -110,8 +132,7 @@ public class SayWhenNoInput : MonoBehaviour
         {
             int channels = source.clip.channels;
             int pointer = source.timeSamples;
-            
-            // Read raw data from the file
+
             if (pointer + 128 < source.clip.samples)
             {
                 source.clip.GetData(audioDataBuffer, pointer);
@@ -123,17 +144,10 @@ public class SayWhenNoInput : MonoBehaviour
                 }
                 float volume = Mathf.Sqrt(sum / 128);
 
-                // Check volume levels in console
-                if (debugMode && volume > 0.001f)
-                {
-                    Debug.Log($"{label} (Ch {channel}) Volume: {volume}");
-                }
-
                 if (volume > sensitivity) timer = mouthSmoothTime;
             }
         }
 
-        // Apply Sprite Swap
         if (timer > 0)
         {
             img.sprite = talking;
@@ -157,29 +171,27 @@ public class SayWhenNoInput : MonoBehaviour
     {
         if (performanceSource == null) return;
 
-        performanceSource.Stop(); 
-        
-        // --- FORCE OUTPUT TO CHANNEL 1 ONLY ---
-        performanceSource.spatialBlend = 0f; // 2D Mode
-        performanceSource.panStereo = -1f;   // Pan 100% Left
+        performanceSource.Stop();
+        performanceSource.spatialBlend = 0f;
+        performanceSource.panStereo = -1f;
 
-        if (idleSource != null) 
+        if (idleSource != null && itsAWitch != null)
         {
             idleSource.PlayOneShot(itsAWitch);
         }
-        
+
         performanceSource.Play();
-        Debug.Log("<color=cyan>Audio Sync:</color> Playing Bruce on Left Speaker. Script reading all 5 channels.");
+        if (debugMode) Debug.Log("<color=cyan>Performance Started.</color>");
     }
 
     void PlayIdle()
     {
-        if (idleClips.Length == 0) return;
+        if (idleClips == null || idleClips.Length == 0) return;
         if (KZSManager != null) KZSManager.ResetAudio();
-        
+
         idleSource.clip = idleClips[Random.Range(0, idleClips.Length)];
         idleSource.Play();
-        
+
         if (KZSManager != null) KZSManager.TimeNoInput = 0f;
     }
 }
