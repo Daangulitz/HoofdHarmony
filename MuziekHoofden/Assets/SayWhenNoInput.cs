@@ -169,29 +169,27 @@ public class SayWhenNoInput : MonoBehaviour
 
     void PlayPerformance()
     {
-        if (performanceSource == null) return;
+        if (idleSource == null) return;
 
-        performanceSource.Stop();
-        performanceSource.spatialBlend = 0f;
-        performanceSource.panStereo = -1f;
-
-        if (idleSource != null && itsAWitch != null)
-        {
-            idleSource.PlayOneShot(itsAWitch);
-        }
-
-        performanceSource.Play();
+        PlayIdle();
         if (debugMode) Debug.Log("<color=cyan>Performance Started.</color>");
     }
 
     void PlayIdle()
     {
         if (idleClips == null || idleClips.Length == 0) return;
-        if (KZSManager != null) KZSManager.ResetAudio();
+
+        // Check if the source is already busy
+        if (idleSource.isPlaying) return;
+
+        // If we got here, nothing is playing, so let's start a new one
+        if (KZSManager != null) 
+        {
+            KZSManager.ResetAudio();
+            KZSManager.TimeNoInput = 0f;
+        }
 
         idleSource.clip = idleClips[Random.Range(0, idleClips.Length)];
         idleSource.Play();
-
-        if (KZSManager != null) KZSManager.TimeNoInput = 0f;
     }
 }
