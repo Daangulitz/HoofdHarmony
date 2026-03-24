@@ -126122,7 +126122,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 776758531b444f94d87507d6825c70e1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -144755,10 +144755,11 @@ MonoBehaviour:
     head1Clip: {fileID: 0}
     head2Clip: {fileID: 8300000, guid: b3fd6e9bde42ea94b9989a2ae8e6f86c, type: 3}
     head3Clip: {fileID: 8300000, guid: 553eb1906a135a246b4580bc11a4a843, type: 3}
-  depthX: 256
-  depthY: 212
-  triggerDistance: 1500
+  oscPort: 5005
+  triggerDistanceMeters: 1.5
+  minDistanceMeters: 0.5
   debugMode: 1
+  currentKinectDepth: 0
 --- !u!4 &1321134848
 Transform:
   m_ObjectHideFlags: 0
@@ -144829,7 +144830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1336736199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144863,7 +144864,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336736198}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b531f336dfee5f438f94ed501caefc7, type: 3}
   m_Name: 
@@ -220926,7 +220927,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 776758531b444f94d87507d6825c70e1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -234174,7 +234175,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 743659637fb7bce4da4b98a3072ee0d3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
