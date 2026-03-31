@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using OscJack; // Requires OscJack Unity Package installed
+using OscJack;
+using System.Collections.Generic;
 
 public class QuoteManager : MonoBehaviour
 {
@@ -13,87 +14,107 @@ public class QuoteManager : MonoBehaviour
         public AudioClip head3Clip;
     }
 
-    [Header("Assign the Face Audio Sources")]
+    [Header("Assign Face Audio Sources")]
     [SerializeField] private AudioSource face1;
     [SerializeField] private AudioSource face2;
     [SerializeField] private AudioSource face3;
 
-    [Header("Your Movie Quotes")]
+    [Header("Movie Quotes Library")]
     public DialogueScene[] library;
-    
-    [Header("Tripwire Settings (OSC from Pi)")]
-    [Tooltip("Must match the port in your Python script")]
+    [Tooltip("How many unique quotes play before repeating?")]
+    public int historyLimit = 3;
+    private List<int> lastPlayedIndices = new List<int>();
+
+    [Header("Eye Rotation (X-Axis)")]
+    [SerializeField] private Transform[] pupils; 
+    [Tooltip("How many degrees the eyes rotate left/right")]
+    public float maxRotationAngle = 25f;
+    [Range(1f, 20f)] public float eyeSmoothSpeed = 8f;
+
+    [Header("Tripwire & OSC Settings")]
     public int oscPort = 5005;
-    [Tooltip("Distance in meters to trigger the heads (e.g., 1.5 = 1.5 meters)")]
     public float triggerDistanceMeters = 1.5f;
-    [Tooltip("Ignore anything closer than this (e.g., 0.5m) to avoid noise")]
     public float minDistanceMeters = 0.5f;
-
-    [Header("Debug Info")]
     public bool debugMode = true;
-    [ReadOnly] public float currentKinectDepth = 0f; // View this in Inspector to test
 
+    // OSC Data Variables
+    private float currentKinectDepth = 0f;
+    private float targetXRotation = 0f; // -1.0 to 1.0
+    private float smoothedX = 0f;
     private bool isBeamBlocked = false;
     private OscServer server;
 
     void Start()
     {
-        // Initialize the OscJack Server
-        // GetSharedServer ensures we don't accidentally open the same port twice
+        // Setup OSC Server
         server = OscMaster.GetSharedServer(oscPort);
-
-        // Bind the address sent by your Raspberry Pi Python script
+        
+        // Listen for depth (Tripwire) and xpos (Eye tracking)
         server.MessageDispatcher.AddCallback("/kinect/depth", OnReceiveDepth);
+        server.MessageDispatcher.AddCallback("/kinect/xpos", OnReceiveX);
 
-        if (debugMode) Debug.Log($"<color=green>OSC Receiver Active on Port {oscPort}</color>");
+        if (library.Length > 0 && historyLimit >= library.Length)
+            historyLimit = library.Length - 1;
     }
 
-    // This runs whenever a new packet arrives from the Pi
-    private void OnReceiveDepth(string address, OscDataHandle data)
-    {
-        // Get the float value sent from the Python script
-        currentKinectDepth = data.GetElementAsFloat(0);
-    }
+    private void OnReceiveDepth(string address, OscDataHandle data) => currentKinectDepth = data.GetElementAsFloat(0);
+    private void OnReceiveX(string address, OscDataHandle data) => targetXRotation = data.GetElementAsFloat(0);
 
     void Update()
     {
-        // Manual trigger for testing
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            PlayRandomQuote();
-        }
-        
-        // Tripwire Logic
+        // 1. Handle Eye Rotation
+        RotateEyes();
+
+        // 2. Manual Test Trigger
+        if (Keyboard.current.spaceKey.wasPressedThisFrame) PlayRandomQuote();
+
+        // 3. Tripwire Logic
         if (!IsAnythingPlaying())
         {
             CheckTripwire();
         }
     }
 
+    private void RotateEyes()
+    {
+        if (pupils == null || pupils.Length == 0) return;
+
+        // Smooth the input value
+        smoothedX = Mathf.Lerp(smoothedX, targetXRotation, Time.deltaTime * eyeSmoothSpeed);
+
+        // Calculate rotation (mapping -1/1 to -maxAngle/maxAngle)
+        float rotationY = smoothedX * maxRotationAngle;
+
+        foreach (Transform pupil in pupils)
+        {
+            if (pupil != null)
+            {
+                // We rotate around the Y-axis to move the look horizontally
+                pupil.localEulerAngles = new Vector3(rotationY, 0, 90);
+            }
+        }
+    }
+
     private bool IsAnythingPlaying()
     {
-        bool f1Busy = face1 != null && face1.isPlaying;
-        bool f2Busy = face2 != null && face2.isPlaying;
-        bool f3Busy = face3 != null && face3.isPlaying;
-
-        return f1Busy || f2Busy || f3Busy;
+        return (face1 != null && face1.isPlaying) || 
+               (face2 != null && face2.isPlaying) || 
+               (face3 != null && face3.isPlaying);
     }
-    
+
     private void CheckTripwire()
     {
-        // Check if current distance is within our 'Tripwire' zone
         if (currentKinectDepth > minDistanceMeters && currentKinectDepth < triggerDistanceMeters)
         {
             if (!isBeamBlocked)
             {
                 isBeamBlocked = true;
-                if (debugMode) Debug.Log($"<b>Tripwire Triggered!</b> Distance: {currentKinectDepth}m");
+                if (debugMode) Debug.Log($"Tripwire! Person at: {currentKinectDepth}m");
                 PlayRandomQuote();
             }
         }
         else
         {
-            // Reset the tripwire so it can be triggered again
             isBeamBlocked = false;
         }
     }
@@ -101,23 +122,32 @@ public class QuoteManager : MonoBehaviour
     [ContextMenu("Play Random Quote")]
     public void PlayRandomQuote()
     {
-        if (IsAnythingPlaying())
-        {
-            if (debugMode) Debug.Log("Heads are busy talking, skipping trigger.");
-            return;
-        }
+        if (IsAnythingPlaying() || library.Length == 0) return;
 
-        if (library.Length == 0) return;
+        int randomIndex = GetRandomIndex();
+        
+        lastPlayedIndices.Add(randomIndex);
+        if (lastPlayedIndices.Count > historyLimit) lastPlayedIndices.RemoveAt(0);
 
-        int randomIndex = Random.Range(0, library.Length);
         PlayQuote(randomIndex);
+    }
+
+    private int GetRandomIndex()
+    {
+        if (library.Length <= 1) return 0;
+        int index;
+        int attempts = 0;
+        do {
+            index = Random.Range(0, library.Length);
+            attempts++;
+        } while (lastPlayedIndices.Contains(index) && attempts < 100);
+        return index;
     }
 
     public void PlayQuote(int index)
     {
-        if (index < 0 || index >= library.Length) return;
-
         DialogueScene quote = library[index];
+        if (debugMode) Debug.Log($"Playing: {quote.sceneName}");
 
         HandleHeadPlay(face1, quote.head1Clip);
         HandleHeadPlay(face2, quote.head2Clip);
@@ -135,13 +165,10 @@ public class QuoteManager : MonoBehaviour
 
     void OnDestroy()
     {
-        // Clean up the listener when the game stops or the object is destroyed
         if (server != null)
         {
             server.MessageDispatcher.RemoveCallback("/kinect/depth", OnReceiveDepth);
+            server.MessageDispatcher.AddCallback("/kinect/xpos", OnReceiveX);
         }
     }
 }
-
-// Simple attribute to make the float viewable but not editable in Inspector
-public class ReadOnlyAttribute : PropertyAttribute { }
