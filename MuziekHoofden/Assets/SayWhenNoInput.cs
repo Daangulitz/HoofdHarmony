@@ -29,7 +29,8 @@ public class QuoteManager : MonoBehaviour
     [SerializeField] private Transform[] pupils; 
     [Tooltip("How many degrees the eyes rotate left/right")]
     public float maxRotationAngle = 25f;
-    [Range(1f, 20f)] public float eyeSmoothSpeed = 8f;
+    [Tooltip("0.1 = Heavy/Slow, 0.5 = Snappy/Fast, 1.0 = Instant")]
+    [Range(0.01f, 1f)] public float eyeSnappiness = 0.3f;
 
     [Header("Tripwire & OSC Settings")]
     public int oscPort = 5005;
@@ -46,10 +47,7 @@ public class QuoteManager : MonoBehaviour
 
     void Start()
     {
-        // Setup OSC Server
         server = OscMaster.GetSharedServer(oscPort);
-        
-        // Listen for depth (Tripwire) and xpos (Eye tracking)
         server.MessageDispatcher.AddCallback("/kinect/depth", OnReceiveDepth);
         server.MessageDispatcher.AddCallback("/kinect/xpos", OnReceiveX);
 
@@ -79,17 +77,17 @@ public class QuoteManager : MonoBehaviour
     {
         if (pupils == null || pupils.Length == 0) return;
 
-        // Smooth the input value
-        smoothedX = Mathf.Lerp(smoothedX, targetXRotation, Time.deltaTime * eyeSmoothSpeed);
+        // Using Lerp without Time.deltaTime creates a "Fast Start, Soft Finish" 
+        // that feels more organic for eye movement.
+        smoothedX = Mathf.Lerp(smoothedX, targetXRotation, eyeSnappiness);
 
-        // Calculate rotation (mapping -1/1 to -maxAngle/maxAngle)
         float rotationY = smoothedX * maxRotationAngle;
 
         foreach (Transform pupil in pupils)
         {
             if (pupil != null)
             {
-                // We rotate around the Y-axis to move the look horizontally
+                // Applying rotation with your specific offsets (X: rot, Z: 90)
                 pupil.localEulerAngles = new Vector3(rotationY, 0, 90);
             }
         }
@@ -168,7 +166,7 @@ public class QuoteManager : MonoBehaviour
         if (server != null)
         {
             server.MessageDispatcher.RemoveCallback("/kinect/depth", OnReceiveDepth);
-            server.MessageDispatcher.AddCallback("/kinect/xpos", OnReceiveX);
+            server.MessageDispatcher.RemoveCallback("/kinect/xpos", OnReceiveX);
         }
     }
 }

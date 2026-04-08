@@ -464,7 +464,7 @@ MonoBehaviour:
   onLipSyncUpdate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 899331413}
+      - m_Target: {fileID: 1123376822}
         m_TargetAssemblyTypeName: uLipSync.uLipSyncBlendShape, uLipSync.Runtime
         m_MethodName: OnLipSyncUpdate
         m_Mode: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 899331414}
+      - m_Target: {fileID: 1123376821}
         m_TargetAssemblyTypeName: uLipSync.uLipSyncBlendShape, uLipSync.Runtime
         m_MethodName: OnLipSyncUpdate
         m_Mode: 0
@@ -194593,7 +194593,7 @@ MonoBehaviour:
   - {fileID: 1995130656}
   - {fileID: 1862632308}
   maxRotationAngle: 15
-  eyeSmoothSpeed: 15
+  eyeSnappiness: 0.3
   oscPort: 5005
   triggerDistanceMeters: 1.5
   minDistanceMeters: 0.5
